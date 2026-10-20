@@ -1,31 +1,35 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: TimBoBN
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Website
+    url: https://tbohlmann.com
+  - name: curl card
+    url: https://tbohlmann.com/card
+    __dangerous__body_down_if_text_missing: "Tim Ole Bohlmann"
+  - name: PGP key
+    url: https://tbohlmann.com/pgp.asc
+    __dangerous__body_down_if_text_missing: "BEGIN PGP PUBLIC KEY BLOCK"
+  - name: Web Key Directory
+    url: https://tbohlmann.com/.well-known/openpgpkey/hu/dizb37aqa5h4skgu7jf1xjr4q71w4paq
+  - name: security.txt
+    url: https://tbohlmann.com/.well-known/security.txt
+    __dangerous__body_down_if_text_missing: "Contact:"
+  - name: MTA-STS policy
+    url: https://mta-sts.tbohlmann.com/.well-known/mta-sts.txt
+    __dangerous__body_down_if_text_missing: "version: STSv1"
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.tbohlmann.com
+  logoUrl: https://github.com/TimBoBN.png
+  name: tbohlmann.com status
+  theme: dark
+  introTitle: "Status of **tbohlmann.com**"
+  introMessage: Website, PGP/WKD and mail security endpoints, checked every five minutes from GitHub Actions.
   navbar:
     - title: Status
       href: /
+    - title: tbohlmann.com
+      href: https://tbohlmann.com
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
